@@ -1,0 +1,108 @@
+.mb-44{ margin-bottom: 44px;}
+.auth-wrapper { width: 100%; background-size: cover; background-repeat: no-repeat; background-position: center center; min-height: 100vh; align-items: center; padding: 30px 50px; }
+.auth-wrapper .auth-container { width: 1313px; margin: 0 auto; display: flex; background: var(--bs-white); border-radius: 24px; box-shadow: 8px 8px 24px 0px #00000014; }
+.auth-form { flex: 1; display: flex; align-items: center; padding: 48px 30px; }
+.max-card { max-width: 400px; margin: 0 auto; width: 100%;}
+.max-card .auth-logo { margin-bottom: 4px; }
+.max-card p { margin-bottom: 44px; }
+.pass-container { position: absolute; right: 0; top: 0; display: flex; align-items: center; width: 52px; height: 52px; justify-content: center; cursor: pointer; }
+.pass-container img, .pass-container svg { width: 24px; height: auto; }
+.auth-info { flex: 0 0 auto; width: 570px; }
+.auth-bg { border-radius: 24px; overflow: hidden; background: radial-gradient(125.57% 123.21% at 14.81% 0%, #A98AFF 0%, #8154FF 50%, #8154FF 75%, #20387E 100%); height: 100%; }
+.auth-bg img { width: 100%; height: auto; }
+.forgot-link { margin: 48px 0px;}
+.link-underline-text {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+}
+
+.create-account a {font-weight: 500;}
+
+.demo{ display: flex;}
+.auth-container.auth-card-small {
+    max-width: 495px;
+    width: 100%;
+}
+
+/* Resetting Password css start */
+
+.card-800 {max-width: 800px; margin: 0 auto;}
+.icon-back {
+    background-color: var(--bs-white);
+    border: 1px solid var(--dark-5);
+    width: 44px;
+    height: 44px;
+    color: var(--dark-8);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.icon-back {
+    background-color: var(--bs-white);
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--dark-5);
+    display: flex;
+    color: var(--dark-8);
+    align-items: center;
+    justify-content: center;
+}
+.icon-back:hover{ background-color: var( --primary-500); color: var(--bs-white); border-color: var(--primary-500);}
+.resend-email-text .link-underline-text{ color: var(--dark-7);}
+.create-account a {color: var(--primary-500);}
+.auth-info-box {
+    background-position: 0;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    transition: all .3s;
+    display: flex;
+    position: relative;
+}
+.bgImg {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-card-small.auth-box {
+    width: 440px;
+    max-width: 100%;
+}
+
+
+.breadcrumb { margin-bottom: 0px;}
+.breadcrumb .breadcrumb-item {font-size: 14px;}
+
+.page-title h5 {
+    font-size: 16px;
+}
+
+@media screen and (max-width:1199px) {
+.auth-info {width: 50%;}
+.auth-card-small.auth-box {width: 350px;}
+}
+
+@media screen and (max-width:991px) {
+.auth-wrapper { padding: 30px 20px;}
+}
+
+@media screen and (max-width:767px) {
+.auth-wrapper {padding: 30px 10px;}    
+.auth-wrapper .auth-container{ display: block;}
+.auth-info {width: 100%; display: none;}
+.auth-form {padding: 30px 15px;}
+.max-card p {font-size: 13px;}
+.auth-card-small.auth-box{ width: 100%;}
+.auth-info-box.box-right{ display: none;}
+.auth-card-small.auth-box .auth-form {min-height: 100vh;}
+
+} 

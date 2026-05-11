@@ -1,0 +1,138 @@
+.header-dashboard {
+    border-bottom: 1px solid var(--dark-5);
+    background: var(--bs-white);
+}
+.header-dashboard .flex-grow-1 { padding: 5px 24px;}
+.logo {
+    border-right: 1px solid var(--dark-5);
+    flex: none;
+    width: 270px;
+    /* padding: 12px 24px; */
+    text-align: center;
+    min-height: 59px;
+    position: relative;
+    transition: all 0.5s ease;
+    padding: 9px 20px;
+}
+
+.icon-bordred {
+    border: 1px solid var(--dark-8);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    color: var(--dark-8);
+    align-items: center;
+    justify-content: center;
+}
+.icon-bordred:hover{
+    background-color: var(--primary-500);
+    border-color: var(--primary-500);
+    color: var(--bs-white);
+}
+.user-pic .btn-primary {
+    border: 0 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    display: block;
+}
+
+.user-pic .btn-primary img {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.user-pic .dropdown-toggle:after {
+    display: none;
+}
+
+.button-add {
+    height: 40px;
+    color: var(--dark-8);
+    border: 1px solid var(--dark-8);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0px 12px;
+    gap: 8px;
+    transition: all .5s ease-in-out;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.button-add:hover{ background-color: var(--primary-500); color: var(--bs-white);}
+
+.page-title {
+    z-index: 3;
+    position: fixed;
+    top: 8px;
+    left: 300px;
+    transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 1199px) {
+.breadcrumb .breadcrumb-item { font-size: 12px;}
+.logo { width: 160px;padding: 8px 10px;}
+.page-title {top: 6px;left: 140px;}
+.icon-back {width: 30px;height: 30px;padding: 5px;}
+.page-title h5 {font-size: 14px;}
+.header-dashboard .flex-grow-1 {padding: 5px 10px;}
+
+.logo {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+.page-title {
+    display: none;
+}
+.header-dashboard .flex-grow-1 {
+    padding: 12px 15px 12px 0;
+}
+
+
+    
+
+} 
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+    .logo {
+        width: 150px;
+        border-right: 0px;
+    }
+
+    .user-pic .btn-primary img {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .button-add {
+    height: 30px;
+    gap: 4px;
+    padding: 0 7px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+    .icon-bordred {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+}

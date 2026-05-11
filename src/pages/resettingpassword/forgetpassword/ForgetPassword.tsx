@@ -1,0 +1,49 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import BackArrow from "../../../common/Icons/BackArrow";
+import { FloatingLabel, Form } from "react-bootstrap";
+import ResetLinkSentModal from "../../../common/modalComponent/ResetLinkSentModal";
+import Header from "../../../common/Header";
+
+const ForgetPassword = () => {
+  // SM Modal 
+
+    const [showFilterResetLinkModal, setShowFilterResetLinkModal] = useState(false);
+    const handleFilterResetLinkModal = () => {
+        setShowFilterResetLinkModal(true);
+    };
+    const handleCloseAll = () => {
+        setShowFilterResetLinkModal(false);
+    };
+
+    return (
+        <div>
+            <Header />
+            <div className='mt-82'>
+                <div className='resetting-Password'>
+                    <div className='container position-relative'>
+                        <Link to="/login" className='back-link'>
+                            <BackArrow />
+                        </Link>
+
+                        <div className='card-800 text-center'>
+                            <div className='head-box text-center mt-32 mb-48'>
+                                <h2>Forget Your Password?</h2>
+                                <p className='mb-0'>Lost  your password? No stress. Just drop your email below and we’ll send you a link to reset your password and get you back in.</p>
+                            </div>
+                            <div className='col-md-6 mx-auto'>
+                                <FloatingLabel controlId="floatingInput" label="Email address" className="mb-48 floating-grey-color">
+                                    <Form.Control type="text" placeholder="name@example.com" />
+                                </FloatingLabel>
+                            </div>
+                            <button className='btn-outline fill-btn' onClick={handleFilterResetLinkModal}>Get Reset Link</button>
+                        </div>
+                    </div>
+                </div>
+                <ResetLinkSentModal show={showFilterResetLinkModal} handleClose={handleCloseAll}/>
+            </div>
+        </div>
+    )
+}
+
+export default ForgetPassword

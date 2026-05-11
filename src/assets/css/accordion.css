@@ -1,0 +1,186 @@
+
+
+.accordion-sec .accordion-button {
+    padding: 20px 50px 20px 20px;
+    border-radius: 12px !important;
+    background: var(--dark-1);
+    border: 1px solid var(--dark-4);
+    overflow: hidden;
+    box-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: var(--dark-12);
+}
+
+.accordion-sec  .accordion-item {
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+    margin-bottom: 8px;
+}
+
+.accordion-sec .accordion-button::after {
+    display: none;
+}
+
+.accordion-sec .accordion-button svg {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    background: var(--dark-3);
+    border: 1px solid var(--dark-4);
+    border-radius: 100px;
+    width: 26px;
+    height: 26px;
+    padding: 7px 5px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.accordion-sec .accordion-item h2 {line-height: normal;}
+
+.accordion-sec .accordion-button[aria-expanded="true"] {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background: var(--primary-50);
+    color: var(--primary-500);
+}
+
+.accordion-sec .accordion-item .accordion-collapse {
+    background: var(--dark-1);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid var(  --dark-4);
+    border-top: 0;
+}
+
+.accordion-sec .accordion-item .accordion-collapse .accordion-body {
+    padding: 20px;
+}
+
+.accordion-sec .accordion-button[aria-expanded="true"] svg {
+    background: var(--dark-1);
+    transform: rotate(180deg);
+}
+
+.radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid;
+    border-radius: 50%;
+    position: relative;
+}
+
+.radio:before {
+    content: "";
+    border: 3px solid var(--bs-white);
+    border-width: 0 2px 2px 0;
+    width: 5px;
+    height: 10px;
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    transform: rotate(45deg);
+}
+
+.radio.completed {
+    color: var(--green-500);
+    background: var(--green-500);
+}
+.radio.completed::before{ display: block;}
+
+
+/***************/
+
+.default-accordion-sec .accordion-sec .accordion-button {
+    border: 1px solid var(--dark-5);
+    background: var(--dark-3);
+    color: var(--dark-12);
+}
+
+.default-accordion-sec .accordion-sec  .accordion-collapse {
+    background: var(--dark-3);
+    border: 1px solid var(--dark-5);
+    border-top: none;
+}
+
+.artical-box {
+    border: 1px solid var(--primary-50);
+    background: var(--dark-1);
+    padding: 12px 48px 12px 16px;
+    border-radius: 8px;
+    width: calc(50% - 4px);
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: var(--dark-12) !important;
+}
+
+.artical-box .link-icons {
+    right: 15px;
+    top: 16px;
+}
+
+.artical-box:hover {
+    background: var(--dark-3);
+}
+
+.artical-box .icons-artical {
+    background: var(--primary-50);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artical-box .text-artical {
+    width: calc(100% - 40px);
+}
+
+
+
+
+@media only screen and (max-width: 1366px) {
+.artical-box {
+    width: 100%;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+ 
+.artical-box {
+    width: calc(50% - 4px);
+}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .accordion-sec .accordion-button {
+        padding: 12px 36px 12px 12px;
+    }
+
+    .accordion-sec .accordion-button svg {
+        top: 12px;
+        right: 8px;
+    }
+
+    .accordion-sec .accordion-item .accordion-collapse .accordion-body {
+        padding: 12px;
+    }
+
+    .artical-box {
+        width: 100%;
+    }
+
+}

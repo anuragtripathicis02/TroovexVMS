@@ -1,0 +1,27 @@
+
+
+.details-box p {
+    color: var(--dark-8);
+}
+
+.card-person-details .img-box img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var( --dark-5);
+}
+
+
+@media only screen and (max-width:767px){
+
+    
+.tabs-com-box .tabs-main-box .tab-custom-title {
+    padding-bottom: 20px;
+}
+
+.tabs-com-box ul.tabs-main-box {
+    margin-bottom: 20px;
+}
+
+} 
