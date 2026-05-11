@@ -1,8 +1,4 @@
-// "use client";
-// import { useState, useEffect } from "react";
-// import Image from "next/image";
-// import HeaderLogo from "../../../src/app/images/header-logo.svg";
-// import Link from "next/link";
+
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";

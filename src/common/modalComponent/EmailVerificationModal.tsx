@@ -1,15 +1,9 @@
-// "use client";
-// import Link from 'next/link'
-// import React, { useRef, useState } from 'react';
-// import { Modal, Button, Form, Dropdown } from 'react-bootstrap';
-// import Image from 'next/image';
-// import Tab from 'react-bootstrap/Tab';
+
 
 import { Button, Modal } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import ImagesResend from "../../assets/images/resend-link-img.png";
 
-// import ImagesResend from "../../../../src/app/images/resend-link-img.png";
 
 const EmailVerificationModal = ({ show, handleClose }: any) => {
   return (

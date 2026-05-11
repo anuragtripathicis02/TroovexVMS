@@ -1,9 +1,3 @@
-// "use client";
-// import BackArrow from '@/component/common/Icons/BackArrow';
-// import Link from 'next/link';
-// import React, { useState } from 'react'
-// import FloatingLabel from 'react-bootstrap/FloatingLabel';
-// import Form from 'react-bootstrap/Form';
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
