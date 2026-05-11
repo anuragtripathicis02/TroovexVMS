@@ -36,6 +36,7 @@ function AppContent() {
     };
   }, [hideLayout]);
 
+  
   return (
     <div>
       {!hideLayout && <DashboardHeader />}
